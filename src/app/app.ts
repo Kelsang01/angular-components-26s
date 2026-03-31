@@ -4,6 +4,7 @@ import { MrooneyAddition } from './mrooney-addition/mrooney-addition';
 import { ZsmuckerbryanChecklist } from './zsmuckerbryan-checklist/zsmuckerbryan-checklist';
 import { TsteeleMultiplication } from './tsteele-multiplication/tsteele-multiplication';
 import { CbaresDiceRoll } from './cbares-dice-roll/cbares-dice-roll';
+import { LmeierCustomTopping } from './lmeier-custom-topping/lmeier-custom-topping';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { CbaresDiceRoll } from './cbares-dice-roll/cbares-dice-roll';
     TsteeleMultiplication,
     CbaresDiceRoll,
     ZsmuckerbryanChecklist,
+    LmeierCustomTopping,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
