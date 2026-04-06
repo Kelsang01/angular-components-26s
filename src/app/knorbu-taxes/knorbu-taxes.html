@@ -3,15 +3,19 @@
     <mat-card-title>Kelsang's Tax Calculator</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <br />
+    <h3>Wisconsin Tax Rate: 5%</h3>
     <mat-form-field class="example-full-width">
         <mat-label>Number</mat-label>
-        <input matInput [value]="2">
+        <input 
+            type="number" 
+            matInput [value]="inputNumber" 
+            (input)="updateNumber($event.target.value)">
     </mat-form-field>
-    &nbsp
-    <input type="number" />
-    <button>Calculate Taxes!</button>
-
-    <h3>Total:</h3>
+    &nbsp;
+        <button 
+            mat-stroked-button
+            (click)="calculate()">Calculate Taxes!
+        </button>
+    <h3>Total: {{ total() }}</h3>
   </mat-card-content>
 </mat-card>
