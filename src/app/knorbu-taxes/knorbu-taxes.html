@@ -1,19 +1,17 @@
 <mat-card appearance="outlined">
   <mat-card-header>
-    <mat-card-title>Kelsang's Tax Calculator for Pizza Toppings</mat-card-title>
+    <mat-card-title>Kelsang's Tax Calculator</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <br />
-    &nbsp;
-    <button
-      matButton="outlined"
-      (click)="??"
-    >
-      Calculate Taxes!
-    </button>
-    <br />
+    <mat-form-field class="example-full-width">
+        <mat-label>Number</mat-label>
+        <input matInput [value]="2">
+    </mat-form-field>
+    &nbsp
+    <input type="number" />
+    <button>Calculate Taxes!</button>
 
-    <h3>Total: {{ total() | currency }}</h3>
-    <h3>After 15% Taxes: {{ total() * 1.15 }} | currency</h3>
+    <h3>Total:</h3>
   </mat-card-content>
 </mat-card>
