@@ -1,1 +1,19 @@
-<p>knorbu-taxes works!</p>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>Kelsang's Tax Calculator for Pizza Toppings</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <br />
+    &nbsp;
+    <button
+      matButton="outlined"
+      (click)="??"
+    >
+      Calculate Taxes!
+    </button>
+    <br />
+
+    <h3>Total: {{ total() | currency }}</h3>
+    <h3>After 15% Taxes: {{ total() * 1.15 }} | currency</h3>
+  </mat-card-content>
+</mat-card>
